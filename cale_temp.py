@@ -3,17 +3,17 @@ def celsius_to_fahr(temp):
     return ("The freezing ponit of water in Fahrenheit is: " + str(temp) )
 
 def kelvins_to_celsius(temp_kelvins):
-    temp = temp_kevins - 273.15
+    temp = temp_kelvins - 273.15
     return ("The absolute freezing point of water in Celsius is: " + str(temp) )
 
 def main():
     freezing_ponit = celsius_to_fahr(0)
-    print (freezing_point)
+    print (freezing_ponit)
 
     temp = 0
 
     absolute_zero = kelvins_to_celsius(temp)
-    print (abslute_zero)
+    print (absolute_zero)
 
 if __name__ == "__main__":
     main()
