@@ -67,12 +67,13 @@ def decToBin(dec_value):
     print(dec_value % 2,end = '')
 ################################################################################
 def decToBin_assist():
+    print("#####################################################")
         # taking input as decimal
         # and, printing its binary
-        decimal = int(input("Input a decimal number: "))
-        print("Binary of the decimal ", decimal, "is: ", end ='')
-        decToBin(decimal)
-        mainMenu_msg_2()
+    decimal = int(input("Input a decimal number: "))
+    print("Binary of the decimal ", decimal, "is: ", end ='')
+    decToBin(decimal)
+    mainMenu_msg_2()
 ################################################################################
 def exit_program():
     print ("Good Bye!")
