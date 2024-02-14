@@ -30,7 +30,7 @@ def binToDec_assist():
     print("#####################################################")
     binary = int(input("Enter a binary value: "))
     print("decimal of binary ", binary, " is: ", binToDec(binary))
-    mainMenu_2nd()
+    mainMenu_msg_1()
 ################################################################################
 def binToDec(bin_value):
 
@@ -47,28 +47,13 @@ def binToDec(bin_value):
     # returning the result
     return decimal_value
 ################################################################################
-def mainMenu_2nd():
+def mainMenu_msg_1():
     print("#####################################################")
-    print("1. Binary to Decimal")
-    print("2. Decimal to Binary")
-    print("3. quit program")
-    while True:
-        try:
-            selection=int(input("Enter Choice: "))
-            if selection==1:
-                binToDec_assist()
-                break
-            elif selection==2:
-                decToBin_assist()
-                break
-            elif selection==3:
-                exit_program()
-                break
-            else:
-                print("Invaild choice Enter 1-3")
-                mainMenu()
-        except ValueError:
-            print("Invalid Choice. Enter 1-3")
+    mainMenu()
+def mainMenu_msg_2():
+        print("                                                     ")
+        print("#####################################################")
+        mainMenu()
 ################################################################################
 # function definition
 # it accepts a decimal value
@@ -84,35 +69,10 @@ def decToBin(dec_value):
 def decToBin_assist():
         # taking input as decimal
         # and, printing its binary
-        print("#####################################################")
         decimal = int(input("Input a decimal number: "))
         print("Binary of the decimal ", decimal, "is: ", end ='')
         decToBin(decimal)
-        mainMenu_dec()
-################################################################################
-def mainMenu_dec():
-    print("                                                     ")
-    print("#####################################################")
-    print("1. Binary to Decimal")
-    print("2. Decimal to Binary")
-    print("3. quit program")
-    while True:
-        try:
-            selection=int(input("Enter Choice: "))
-            if selection==1:
-                binToDec_assist()
-                break
-            elif selection==2:
-                decToBin_assist()
-                break
-            elif selection==3:
-                exit_program()
-                break
-            else:
-                print("Invaild choice Enter 1-3")
-                mainMenu()
-        except ValueError:
-            print("Invalid Choice. Enter 1-3")
+        mainMenu_msg_2()
 ################################################################################
 def exit_program():
     print ("Good Bye!")
